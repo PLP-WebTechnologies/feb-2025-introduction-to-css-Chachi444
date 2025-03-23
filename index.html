@@ -3,12 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="styles.css">
-    <title>My Third Draft</title>
+    <title>My Second Draft</title>
 </head>
 <body>
     <header>
-        <h1>My first Draft</h1>   
+        <h1>Welcome to PLP ACademy</h1>   
     </header>
 
     <nav>
@@ -20,36 +22,10 @@
 
     </nav>
 
-    <main>
-        <section id="home">
-            <h2>Home</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-        </section>
-
-        <section id="about">
-            <h2>About</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-        </section>
-
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.</p>
-        </section>
-    </main>
-
-
-    <ol style="list-style-type: upper-roman;"> 
-        <li>My first draft</li>
-        <li>My second draft</li>  
-        <li>My third draft</li>
-        <li>My fourth draft</li>
-        <li>My fifth draft</li>
-    </ol>
-
-    <img src="https://images.pexels.com/photos/20787/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Cat" >
-
-
+    
+     
     <table border="1">
+        <caption>Tutors Informations</caption>
         <tr>
             <th>Firstname</th>
             <th>Address</th>
@@ -99,6 +75,8 @@
     </table>
 
     <h2>Registration Form</h2>
+   <p>Please fill in the form below to register</p>
+
     <form action="#" method="post">
         <label for="name">Name:</label>
         <input type="text" id="name" name="name" placeholder="Enter your name" required>
@@ -126,23 +104,28 @@
         </select>
 
         <label>Gender:</label>
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label>
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label>
+        <div class="radio-group">
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
 
         <label>What's your favorite Animal?:</label>
         <input type="checkbox" id="cats" name="interests" value="cats">
-        <label for="sports">Cats</label>
-        <input type="checkbox" id="Dogs" name="interests" value="dogs">
-        <label for="music">Dogs</label>
+        <label for="cats">Cats</label>
+        <input type="checkbox" id="dogs" name="interests" value="dogs">
+        <label for="dogs">Dogs</label>
         <input type="checkbox" id="bunny" name="interests" value="bunny">
-        <label for="reading">Bunny</label>
+        <label for="bunny">Bunny</label>
 
         <input type="submit" value="Register">
     </form>
+
+
+
     <footer>
-        <p>Contact: danjoe@gmail.com | Phone: 081- 444- 123- 419</p>
+        <p class="contact-info">Contact: danjoe@gmail.com | Phone: 081- 444- 123- 419</p>
     </footer>
 </body>
 </html>
